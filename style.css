@@ -1,40 +1,58 @@
 body{
-    background-color: orange;
-    font-family: Arial, Helvetica, sans-serif;
+   background-color: orange;
 }
 
-.logo{
-    height: 70px;
+header > img{
+ height: 70px;
 }
-  
-
 
 ul{
-padding: 0;
-display: flex;
-justify-content: center;
-display: inline-block;
-margin: 10px;
-position: relative;
-margin-left: 300px;
-top: -50px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    display: inline-block;
+    margin: 10px;
+    position: relative;
+    margin-left: 300px;
+    top: -50px;
+    
+}
+li{
+list-style: none;
+
 }
 
-li,a{
-    list-style: none;
-    text-decoration: none;
-    color: white;   
+a{
+ text-decoration: none;
+ color: white;
 }
 
 h1{
     color: blue;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-img{
-    height: 500px;
+h2{
+color: green;
 }
+
+p{
+ color: dodgerblue;
+}
+
+main> img{
+    height: 700px;
+    float: right;
+    position: relative;
+    top: -270px;
+}
+
+
 
 footer{
-    background-color: green;
-    height: 70px;
+    min-height: 80px;
+    background-color: yellow;
+    color:white;
+    position: relative;
+    top: 450px;
 }
