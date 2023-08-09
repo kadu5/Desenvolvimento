@@ -1,59 +1,71 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pizzaria</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-   <header>
-    <nav>
-        <ul>
-            <li><a class="header" href="#">Produtos</a></li>
-        </ul>
-        <ul>
-            <li><a class="header" href="contato.html">Contato   
-            </a>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevLinks</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="profile">
+        <img 
+          src="assets/avatar.jpeg"
+          alt="Foto normal cara de bravo."
+        />
+        <p>@Anthony Kadu</p>
+      </div>
+
+      <div id="switch" onclick="toggleMode()">
+        <button></button>
+        <span></span>
+      </div>
+
+      <ul>
+       
+        <li>
+          <a href="https://github.com/kadu5">Ver meu portfólio</a>
         </li>
-        </ul>
-    </nav>
-   </header> 
-   <main>
-    <div class="quadrado">
-        <img src="logo.png" alt="logo da pizzaria" width="100px">
-        <h1 class="nome">Pizzaria do Tio André</h1>
-        <a href="https://www.google.com/maps/dir//Conveni%C3%AAncia+Ana+Luiza,+Rua+Ana+Luiza,+92+-+Bairro+Castelo,+Batatais+-+SP,+14300-228/@-20.8864013,-47.6700547,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x94b9fbc7af68e2d5:0x3ff148c8d4719b0e!2m2!1d-47.6000143!2d-20.8864156?entry=ttu" target="_blank " class="endereço">Quintino Bocaiúva, 100, Castelo, Batatais-SP</a>
-        <p class="Entrega">Entrega</p>
-        <p class="Entrega"> 20 a 40 min</p>
-        <p class="Retirada">Retirada</p>
-        <p class="Retirada">20 min</p>
+
+        <li>
+          <a href="https://www.instagram.com/anthony_kadu/" target="_blank"
+            >Conheça meu instagram</a
+          >
+        </li>
+      </ul>
+      <div id="social-links">
+        <a href="https://github.com/kadu5" target="_blank">
+          <ion-icon name="logo-github"></ion-icon>
+        </a>
+
+        <a href="https://www.instagram.com/anthony_kadu/" target="_blank">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+
+      
+
+      <footer>
+        Feito com ♥ por <a href="https://www.instagram.com/anthony_kadu//">Anthony Kadu</a>
+      </footer>
     </div>
-    <h1>PIZZA</h1>
-    <hr>
-    <div class="pizzas">
-        <h2>Pizza de 8 Pedaços</h2>
-        <p>42,00 reais</p>
-    </div>
-    <div class="pizza2">
-        <h2>Pizza Broto</h2>
-        <p>36,00 Reais</p>
-    </div>
-    <h1>Esfirra</h1>
-    <hr>
-    <div class="Esfirra">
-        <h2>Tradicionais</h2>
-        <p class="pe">Pedido mínimo 5 esfirra</p>
-        <p class="pp">15,00 Reais</p>
-    </div>
-    <div class="doces">
-        <h2>Doces</h2>
-        <p>7,90 Reais</p>
-    </div>
-    <footer>
-        <h2>Produzido por Kadu</h2>
-        
-    </footer>
-   </main>
-</body>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script src="./script.js"></script>
+  </body>
 </html>
