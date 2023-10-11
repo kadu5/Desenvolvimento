@@ -3,54 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reserva para eventos</title>
+    <title>Loja virtual</title>
+   <link rel="shortcut icon" href="img/lacoste.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Reservas para Eventos</h1>
-    </header>
 
-    <div class="container">
-        <h2>Bem-vindo ao nosso site de reservas para eventos!</h2>
-        <p>
-            Reservas Simples e Rápidas: Com apenas alguns cliques, você pode reservar seu lugar em festivais, shows, conferências, casamentos, festas corporativas e muito mais. Adeus às filas e ligações telefônicas intermináveis!
-
-            Variedade de Eventos: Oferecemos uma ampla gama de eventos para todos os gostos e interesses. Desde eventos esportivos emocionantes até shows de artistas renomados e eventos culturais locais, temos algo para todos.
+        <header>
+            <nav>
+                <div class="logo">
+                    <img src="img/lacoste-logo-png-transparent.png" alt="">
+                </div>
+                <ul class="menu">
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Produtos</a></li>
+                    <li><a href="#">Sobre Nós</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <article>
+                <section id="home">
+                    <h1>Sobre nossa loja</h1>
+                    <p>Nosso produtos são de primeira linha, mais também temos peça originais</p>
+                </section>
             
-            Informações úteis: Saiba tudo sobre o evento antes de fazer sua reserva. Desde dados e horários até locais e atrações especiais, fornecemos todas as informações essenciais para que você faça uma escolha certa.
+                <section id="about">
+                    <h2>Sobre Nós</h2>
+                    <p>Estão vendendo a 12 Anos, nossos produtos são de qualidade.</p>
+                </section>
             
-            Opções de Assentos: Escolha seus assentos preferidos em muitos eventos para garantir a melhor experiência possível.
+                <section id="services">
+                    <h2>Produtos</h2>
+                    <div class="service">
+                        <h3>Camisa Polo Meia Quari</h3>
+                        <img src="img/quadri.png" alt="">
+                        <p>90,00R$</p>
+                    </div>
+                    <div class="service">
+                        <h3>Boné letreiro RP</h3>
+                        <img src="img/letreiro.png" alt="">
+                        <p>280,00R$</p>
+                    </div>
+                    <div class="service">
+                        <h3>Camisa Polo Andy</h3>
+                        <img src="img/camisa andy.png" alt="" >
+                        <p>220,00R$</p>
+                    </div>
+                </section>
             
-            Pagamentos Seguros: Nossa plataforma oferece métodos de pagamento seguros para que você possa fazer suas reservas com confiança.
+                <section id="esgotado">
+                    <h2>Produtos Recém estogados</h2>
+                    <div class="esgotado-item">
+                        <img src="img/big roxa.png" alt="Big Roxa">
+                        <h3>Big Roxa</h3>
+                    </div>
+                    <div class="esgotado-item">
+                        <img src="img/bone andy.png" alt="Bonés quadri Andy">
+                        <h3>Bonés quadri Andy</h3>
+                    </div>
+                    <div class="esgotado-item">
+                        <img src="img/sport.png" alt="Sports">
+                        <h3>Sports</h3>
+                    </div>
+                </section>
             
-            Lembretes e Notificações: Nunca perca um evento importante com nossos lembretes e notificações por e-mail ou mensagem de texto.
+                <section id="contact">
+                    <h2>Contato</h2>
+                    <form>
+                        <label for="name">Nome:</label>
+                        <input type="text" id="name" name="name" required>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="message">Mensagem:</label>
+                        <textarea id="message" name="message" required></textarea>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </section>
             
-            Por que escolher o EventoReserva.com:
-            
-            Conveniência: Planeje seus eventos com facilidade a partir do conforto de sua casa ou escritório.
-            
-            Variedade: Com uma ampla seleção de eventos, temos algo para todos os gostos e interesses.
-            
-            Segurança: Garantimos que suas informações pessoais e transações sejam seguras e protegidas.
-            
-            Facilidade de Uso: Nosso site é intuitivo e fácil de navegar, tornando a reserva de eventos uma tarefa simples.
-            
-            Atendimento ao Cliente: Nossa equipe de suporte está disponível para ajudá-lo em todas as etapas do processo.
-            
-            Junte-se a nós no EventoReserva.com e transforme suas experiências de eventos em momentos inesquecíveis. Faça sua reserva agora e prepare-se para viver momentos emocionantes!
-            
-        </p>
-
-        <img src="evento.jpg" alt="">
-
-        <div class="action-buttons">
-            <a href="formulario.html">Fazer uma Reserva</a>
-        </div>
-    </div>
-
-    <footer>
-        &copy; 2023 Reservas para Eventos - Todos os direitos reservados
-    </footer>
+                <footer>
+                    <p>&copy; 2023 loja virtual lacoste</p>
+                </footer>
+            </body>
+            </html>
+            </article>
+        </main>
 </body>
 </html>
