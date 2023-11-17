@@ -1,93 +1,56 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loja virtual</title>
-   <link rel="shortcut icon" href="img/lacoste.png" type="image/x-icon">
+    <title>Página de Vendas 2</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-        <header>
-            <nav>
-                <div class="logo">
-                    <img src="img/lacoste-logo-png-transparent.png" alt="">
-                </div>
-                <ul class="menu">
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#">Produtos</a></li>
-                    <li><a href="#">Sobre Nós</a></li>
-                    <li><a href="#">Contato</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <article>
-                <section id="home">
-                    <h1>Sobre nossa loja</h1>
-                    <p>Nosso produtos são de primeira linha, mais também temos peça originais</p>
-                </section>
-            
-                <section id="about">
-                    <h2>Sobre Nós</h2>
-                    <p>Estão vendendo a 12 Anos, nossos produtos são de qualidade.</p>
-                </section>
-            
-                <section id="services">
-                    <h2>Produtos</h2>
-                    <div class="service">
-                        <h3>Camisa Polo Meia Quari</h3>
-                        <img src="img/quadri.png" alt="">
-                        <p>90,00R$</p>
-                    </div>
-                    <div class="service">
-                        <h3>Boné letreiro RP</h3>
-                        <img src="img/letreiro.png" alt="">
-                        <p>280,00R$</p>
-                    </div>
-                    <div class="service">
-                        <h3>Camisa Polo Andy</h3>
-                        <img src="img/camisa andy.png" alt="" >
-                        <p>220,00R$</p>
-                    </div>
-                </section>
-            
-                <section id="esgotado">
-                    <h2>Produtos Recém estogados</h2>
-                    <div class="esgotado-item">
-                        <img src="img/big roxa.png" alt="Big Roxa">
-                        <h3>Big Roxa</h3>
-                    </div>
-                    <div class="esgotado-item">
-                        <img src="img/bone andy.png" alt="Bonés quadri Andy">
-                        <h3>Bonés quadri Andy</h3>
-                    </div>
-                    <div class="esgotado-item">
-                        <img src="img/sport.png" alt="Sports">
-                        <h3>Sports</h3>
-                    </div>
-                </section>
-            
-                <section id="contact">
-                    <h2>Contato</h2>
-                    <form>
-                        <label for="name">Nome:</label>
-                        <input type="text" id="name" name="name" required>
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-                        <label for="message">Mensagem:</label>
-                        <textarea id="message" name="message" required></textarea>
-                        <button type="submit">Enviar</button>
-                    </form>
-                </section>
-            
-                <footer>
-                    <p>&copy; 2023 loja virtual lacoste</p>
-                </footer>
-            </body>
-            </html>
-            </article>
-        </main>
+    <header>
+        <h1>Oferta Especial</h1>
+    </header>
+
+    <section>
+        <h2>Produto Exclusivo</h2>
+        <p>Conheça nosso incrível produto. Compre agora e receba benefícios exclusivos!</p>
+
+        <form id="orderForm">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" placeholder="Seu Nome" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Seu Email" required>
+
+            <label for="quantity">Quantidade:</label>
+            <input type="number" id="quantity" name="quantity" min="1" placeholder="1" required>
+
+            <button type="button" onclick="submitForm()">Comprar Agora</button>
+        </form>
+    </section>
+
+
+    <div class="product" onclick="showProduct('Smartphone', 499.99)">
+        <img src="png/celular.png" alt="Smartphone">
+        <div class="product-info">
+            <h3>Smartphone</h3>
+        </div>
+
+        <div class="product" onclick="showProduct('laptop', 700.00)">
+            <img src="png/laprtop.avif" alt="Laptop">
+            <div class="product-info">
+                <h3>Laptop</h3>
+            </div>
+        
+
+
+    <script>
+        function submitForm() {
+            // Lógica de processamento do formulário aqui (pode ser expandida conforme necessário).
+            console.log("Formulário enviado!");
+        }
+    </script>
+
 </body>
 </html>
